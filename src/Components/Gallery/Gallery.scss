@@ -1,0 +1,17 @@
+@import "./src/styles/_variables" ;
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #f6f6f6;
+    @media screen and (max-width: $small-resolution){
+        padding: 0;
+        margin-bottom: 20px;
+        background-color: transparent;
+    }
+}

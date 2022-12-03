@@ -1,0 +1,26 @@
+@import "src/styles/_variables";
+
+.navigation{
+    width: 310px;
+    height: 35px;
+    @media screen and (max-width: $small-resolution){
+        width: 50%;
+        height: auto;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+    }
+    &__link{
+        font-size: 1.4em;
+        text-decoration: none;
+        @media screen and (max-width: $small-resolution){
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+    }
+    &__link:hover{
+        text-decoration: underline;
+    }
+}
